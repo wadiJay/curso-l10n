@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.highlight {
+    color: #FFF024;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+nav {
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
+}
+
+.navfoot {
+    background-color: #1D2B53;
+    color: white;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.classes {
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.class {
+    min-height: 20vh;
+    background-color: #FF004D;
+    flex-basis: 40%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.class a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.class a:hover {
+    border-bottom: 5px solid #7E2553;
+}
+
+footer {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.div-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Ubuntu';
+    font-size: 1.15rem;
+}
+
+.div-login input { margin: 0 10px; }
+
+footer a {
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    font-family: 'Ubuntu';
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #FF004D;
+    border: none;
+    color: white;
+    font-size: 1.125rem;
+    margin: 0 5px;
+}
