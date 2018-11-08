@@ -1,9 +1,8 @@
 var express = require('express')
 var hbs = require('hbs');
 
-const app = express();
-
 const port = process.env.PORT || 3000;
+const app = express();
 
 app.use(express.static(__dirname + '/public'));
 hbs.registerPartials(__dirname + '/views/partials/');
@@ -34,6 +33,4 @@ app.get('/contacto', (req,res) => {
     res.render('contacto.hbs')
 });
 
-app.listen(port, () => {
-    console.log(`App running on http://localhost${port}!`);
-});
+app.listen(port);
