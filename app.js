@@ -8,10 +8,9 @@ app.use(express.static(__dirname + '/public'));
 hbs.registerPartials(__dirname + '/views/partials/');
 app.set('view engine', 'hbs');
 
+
+
 app.get('/', (req,res) => {
-    res.render('home.hbs')
-});
-app.get('/index', (req,res) => {
     res.render('index.hbs')
 });
 app.get('/empresa', (req,res) => {
@@ -29,8 +28,7 @@ app.get('/productos', (req,res) => {
 app.get('/comex', (req,res) => {
     res.render('comex.hbs')
 });
-app.get('/contacto', (req,res) => {
-    res.render('contacto.hbs')
+app.use(function (req, res) {
+    res.render('404.hbs');
 });
-
 app.listen(port);
